@@ -3,6 +3,8 @@
 
    */
 
+  // 변수를 선언할 때
+
   // number
   const num: number = 5;
 
@@ -61,7 +63,7 @@
 
   // object
   // 모든 객체 데이터 타입을 쓸 수 있다.
-  let obj: object; // 😢😢 타입은 명확할수록 좋다.
+  let obj: object; // 😢😢 타입은 명확할수록 좋다. 그렇기에 잘 안 쓴다.
   function acceptSomeobject(obj: object) {}
   acceptSomeobject({ name: 'ellie' });
   acceptSomeobject({ animal: 'dog' });
