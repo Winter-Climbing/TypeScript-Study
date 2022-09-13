@@ -53,7 +53,7 @@
   let unusable: void = undefined // 😢😢
 
   // never
-  // never return할 계획이 없을 때 쓴다.
+  // return할 계획이 없을 때 그것을 명시하기 위해 쓴다.
   function throwError(message: string): never {
     // message -> server (log)
     throw new Error(message);
