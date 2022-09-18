@@ -24,4 +24,7 @@
   ellieName = 'name'
   type JSON = 'json'
   const json:JSON = 'json'
+
+  type Boal = true;
+  // const isCat: Boal = false // 에러가 뜬다.
 }
