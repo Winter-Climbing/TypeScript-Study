@@ -10,13 +10,13 @@ function randomCoordinate(): { x: number; y: number } {
 // 객체인 변수에 타입을 설정하고 있다.
 let coordinate: { x: number; y: number } = { x: 34, y: 2 };
 
-// colt가 엄청 헷갈렸던 것
+// colt가 처음 타입스크립트를 쓸 때 엄청 헷갈렸던 것
 printName({ first: "Mick", last: "Jagger" }); //age: 473}) // 지정된 프로퍼티 외에 다른 프로퍼티를 사용할 경우 에러를 띄운다.
-const singer = { first: "Mick", last: "Jagger", age: 473 }; // 하지만 변수를 지정해서 넘길 경우 해당 변수에 printName 함수의 프로퍼티가 있는지 없는지만 확인한다.
-printName(singer);
+const singer = { first: "Mick", last: "Jagger", age: 473 };
+printName(singer); // 하지만 변수를 지정해서 넘길 경우 해당 변수에 printName 함수의 프로퍼티가 있는지 없는지만 확인한다.
 
 // type Alias 타입 별칭
-// type alias를 쓸 때 무조건 대문자를 써야 한다.
+// type alias를 쓸 때 대문자를 쓰는 것이 컨벤션이다.
 type Point = {
   x: number;
   y: number;
