@@ -1,4 +1,4 @@
-// 유니온 타입은 한 변수가 여러 타입을 가질 수 있다.
+// 유니온 타입은 한 변수가 여러 타입을 가지는 것을 의미한다.
 // type alias도 마찬가지다.
 
 let age: number | string | boolean = 21;
@@ -63,7 +63,7 @@ mood = "Sad";
 type DayOfWeek =
   | "Monday"
   | "Tuesday"
-  | "Wednesday"
+  | "Wedsday"
   | "Thursday"
   | "Friday"
   | "Saturday"

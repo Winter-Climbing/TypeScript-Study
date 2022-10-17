@@ -3,8 +3,8 @@ const activeUsers: string[] = ["colt"];
 activeUsers.push("Tony");
 // activeUsers.push(21);  type error!!
 
-// const bools: boolean[] = []
-const bools: Array<boolean> = []; // 위와 밑은 똑같은 구문이다.
+const bools1: boolean[] = [];
+const bools2: Array<boolean> = []; // 위와 밑은 똑같은 구문이다.
 
 // 자료형 타입에도 똑같이 적용된다.
 type Point1 = {
