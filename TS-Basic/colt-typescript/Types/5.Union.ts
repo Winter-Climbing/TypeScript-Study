@@ -71,4 +71,4 @@ type DayOfWeek =
 
 let today: DayOfWeek = "Monday";
 today = "Friday";
-// today = 'monday'    error!!
+// today = 'blackFriday'    error!!

@@ -35,7 +35,7 @@ const thomas: Person = {
 interface Product {
   name: string;
   price: number;
-  applyDiscount(discount: number): number;
+  applyDiscount(discount: number): number; // 매개변수와 반환값에 타입 설정
 }
 
 const shoes: Product = {
@@ -75,8 +75,8 @@ const elton: Dog = {
 };
 
 // 인터페이스의 확장 - 객체 지향!!!
-// Dog 인터페이스를 가져오는 (상위)
-// ServiceDog 인터페이스를 만들었다. (상위 상속)
+// Dog 인터페이스를 가져오는 (상위 개념)
+// ServiceDog 인터페이스를 만들었다. (상위 개념 상속)
 interface ServiceDog extends Dog {
   job: "drug sniffer" | "bomb" | "guide dog";
 }
