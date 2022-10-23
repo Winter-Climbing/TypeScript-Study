@@ -1,5 +1,5 @@
 // class Player {
-//   // 미리 프로퍼티의 타입을 설정해줘야 한다.
+//   // 프로퍼티의 key는 타입을 미리 설정해줘야 한다. - 단축 구문을 사용하지 않는 경우
 //   // readonly를 통해 값 할당이 처음에만 가능하다고 설정한다.
 //   // public은 기본값이며 외부 어디서든 접근할 수 있다.
 //   // private는 오직 class 내부에서만 접근할 수 있다.
@@ -78,6 +78,7 @@ interface Printable {
   print(): void;
 }
 
+// interface와 class의 연결
 // implements로 연결한다.
 // interface안의 프로퍼티에 대한 정의가 있어야 한다.
 class Bike implements Colorful {
@@ -95,7 +96,7 @@ const bike1 = new Bike("red");
 const Jacket1 = new Jacket("Prada", "black");
 
 // abstract 클래스
-// 인스터를 만들 수 없는 클래스
+// 인스턴스를 만들 수 없는 클래스
 // 이게 왜 필요함?
 // 패턴을 정의하고, 자식 클래스에서 시행돼야 하는 메서드를 정의하는데 사용된다.
 
@@ -112,6 +113,7 @@ abstract class Employee {
     console.log("HELLO!");
   }
 }
+// const example = new Employee() - abstract는 instance를 만들 수 없다.
 
 // getPay() 를 쓰지 않으면 error을 발생시킨다.
 class FullTimeEmployee extends Employee {

@@ -22,7 +22,7 @@ function defaultF(person: string = "stranger") {
   return `Hi there, ${person}!`;
 }
 
-function rando(num: number) {
+function random(num: number): string | number {
   if (Math.random() < 0.5) {
     return num.toString();
   }

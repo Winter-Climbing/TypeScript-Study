@@ -18,9 +18,9 @@ interface Todo {
   completed: boolean;
 }
 
-const btn = document.getElementById("btn")! as HTMLButtonElement;
+// type assertion - 타입 단언 - !
 
-// type assertion - 타입 단언
+const btn = document.getElementById("btn")! as HTMLButtonElement;
 
 let mystery: unknown = "hello world!";
 
@@ -53,7 +53,7 @@ function saveTodos() {
 
 // e의 타입을 어떻게 추론하는걸까?
 // ts는 그래도 문맥을 파악할 줄 안다!!
-// addEventListener에 'submit'를 썼으니 submittype이겠지!!
+// addEventListener에 'submit'를 썼으니 submitEvent겠지!!
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const newTodo: Todo = {
