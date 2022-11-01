@@ -63,6 +63,7 @@ function printDoubleLength<T extends Length>(thing: T): number {
 }
 
 // 제네릭에 기본 타입 설정하기
+// 호출 시 타입이 없다면 number로, 있다면 해당 타입으로
 function makeEmptyArray<T = number>(): T[] {
   return [];
 }
