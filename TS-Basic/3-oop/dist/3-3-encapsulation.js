@@ -11,7 +11,7 @@
             this.coffeeBeans = coffeeBeans;
         }
         // 함수를 통해 해당 객체를 생성할 때 constructor에 private를 주면 객체 생성시에 무조건 해당 함수를 통해 객체를 생성해야 한다.
-        // constructor 제작자가 외부 접근이 불가능하다니 함수를 통해 만들어야지 뭐
+        // 'constructor(제작자)가 외부 접근이 불가능하다니 함수를 통해 만들어야지 뭐' 라는 아이디어다.
         static makeMachine(coffeeBeans) {
             return new CoffeeMaker(coffeeBeans);
         }
@@ -36,6 +36,7 @@
     const maker = CoffeeMaker.makeMachine(32);
     maker.fillCoffeeBeans(23);
     // maker.coffeeBeans = -24와 같은 받아서는 안 되는 값을 제한하지 못 하고 있다.
+    //
     // getter는 읽기 전용
     // setter는 쓰기 전용
     class User {
